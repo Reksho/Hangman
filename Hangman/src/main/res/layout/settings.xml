@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+    <ListPreference
+            android:title="Word length"
+            android:summary="Select how long the word should be"
+            android:key="listPref"
+            android:defaultValue="4"
+            android:entries="@array/words"
+            android:entryValues="@array/words"/>
+
+    <ListPreference
+            android:title="Amount of guesses"
+            android:summary="Select how many guesses before losing"
+            android:key="listPref2"
+            android:defaultValue="10"
+            android:entries="@array/guesses"
+            android:entryValues="@array/guesses"/>
+
+</PreferenceScreen>
